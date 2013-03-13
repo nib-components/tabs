@@ -1,0 +1,6 @@
+{
+  "name": "tabs",
+  "version": "0.0.1",
+  "description": "Tab all the things",
+  "scripts": ["index.js"]
+}
