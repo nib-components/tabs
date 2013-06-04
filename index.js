@@ -251,12 +251,14 @@ _.extend(Tabs.prototype, Backbone.Events, {
 
     return loading;
   },
-  
+
   tellServerTheTabHasBeenSelected: function(index){
     if( this._xhr && this._xhr.state() === "pending" ) {
       this._xhr.abort();
     }
-    this._xhr = $.ajax(this.getTabUrl(index));
+    var url = this.getTabUrl(index);
+    if( url === "#" ) return;
+    this._xhr = $.ajax(url);
     return this._xhr;
   }
 
