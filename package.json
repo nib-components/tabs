@@ -1,0 +1,10 @@
+{
+  "name": "@nib-components/tabs",
+  "version": "0.0.2",
+  "description": "Tab all the things",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nib-components/tabs.git"
+  }
+}
